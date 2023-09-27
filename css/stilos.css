@@ -1,0 +1,51 @@
+*{ 
+    margin: 0;
+    
+}
+h1{
+
+    text-align: center;
+}
+
+table,th , td{
+    width: 1000px;
+    height: 50px;
+}
+td{
+
+    text-align: center;
+
+}
+#fila1{
+    text-align: left;
+}
+
+.fran{
+    background-color: blueviolet;
+}
+
+.joa{
+    background-color: brown;
+}
+
+.ester{
+    background-color: orange;
+
+}
+
+.marc{
+    background-color: red;
+
+}
+
+.rober{
+    background-color: rgb(74, 74, 166);
+
+
+}
+
+.antonio{
+    background-color: yellowgreen;
+
+
+}
