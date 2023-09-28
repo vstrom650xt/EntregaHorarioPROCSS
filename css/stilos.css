@@ -1,51 +1,76 @@
-*{ 
+html, body {
+    height: 100%;
     margin: 0;
-    
-}
-h1{
+    font-family: "Rock Salt", cursive;
+    }
 
+h1 {
     text-align: center;
 }
 
-table,th , td{
-    width: 1000px;
-    height: 50px;
+table{
+    margin: auto;
 }
-td{
 
+th,td,tr{
+    height: 70px;
+    width: 150px;
+
+}
+
+td {
     text-align: center;
-
-}
-#fila1{
-    text-align: left;
 }
 
-.fran{
+
+
+
+
+
+#fila1 {
+text-align: left;
+}
+
+#filaPatio{
+background-color: rgb(31, 194, 107);
+text-align: center;
+
+}
+.fran {
+    background-size: cover;  
+    background-image: url('../img/fran.jpeg');
     background-color: blueviolet;
+    font-family: "Comics San";
+
 }
 
-.joa{
+.joa {
+    background-size: cover;
+    background-image: url('../img/joa.jpeg');
     background-color: brown;
 }
 
-.ester{
+.ester {
+    background-image: url('../img/ester.jpeg');
+    background-size: cover;
     background-color: orange;
-
 }
 
-.marc{
+.marc {
+    background-image: url('../img/marc.webp');
     background-color: red;
-
+    background-size: cover;
 }
 
-.rober{
+.rober {
+    background-size: cover;
+    background-image: url('../img/rober.jpeg');
     background-color: rgb(74, 74, 166);
-
-
 }
 
-.antonio{
+.antonio {
+    background-image: url('../img/antonio.jpeg');
+    background-size: cover;
     background-color: yellowgreen;
-
-
 }
+
