@@ -1,18 +1,21 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     font-family: "Rock Salt", cursive;
-    }
+}
 
 h1 {
     text-align: center;
 }
 
-table{
+table {
     margin: auto;
 }
 
-th,td,tr{
+th,
+td,
+tr {
     height: 70px;
     width: 150px;
 
@@ -22,51 +25,171 @@ td {
     text-align: center;
 }
 
+td:empty {
+    background-color: wheat;
+
+}
+
+td:hover:empty {
+    box-shadow: inset 0 0 0 2px #d36919;
+}
+
 
 #fila1 {
-text-align: left;
+    text-align: left;
 }
 
-#filaPatio{
-background-color: rgb(31, 194, 107);
-text-align: center;
 
+#filaPatio td:first-child {
+    background-color: white;
 }
+
+#filaPatio td:not(:first-child) {
+    background-color: green;
+}
+
+
+#filaPatio:hover td:not(:first-child) {
+    background-color: rgb(0, 9, 128);
+}
+
+
+
 .fran {
-    background-size: cover;  
-    background-image: url('../img/fran.jpeg');
-    background-color: blueviolet;
-    font-family: "Comics San";
+    background-size: cover;
+    background-image: url('../img/fran.jpg');
+    font-family: 'Sans Comic Sans', sans-serif;
+}
 
+.fran:hover {
+    box-shadow: inset 0 0 0 2px #2fd319;
+}
+
+.fran:hover::after {
+    height: 50px;
+    content: "diseño \A interfaces. \A fran";
+    white-space: pre;
+    font-size: 100%;
 }
 
 .joa {
     background-size: cover;
-    background-image: url('../img/joa.jpeg');
-    background-color: brown;
+    background-image: url('../img/joa.jpg');
 }
+
+.joa:hover {
+    box-shadow: inset 0 0 0 2px #c91f6e;
+}
+
+
+.joa:hover::after {
+    height: 50px;
+    content: "Programacion de\A servicios y procesos. \A joaquin";
+    white-space: pre;
+    font-size: 100%;
+}
+
 
 .ester {
-    background-image: url('../img/ester.jpeg');
+    background-image: url('../img/ester.jpg');
     background-size: cover;
-    background-color: orange;
 }
 
+
+.ester:hover {
+    box-shadow: inset 0 0 0 2px #7a9222;
+}
+
+.ester:hover::after {
+    height: 50px;
+    content: "empresa\A iniciativa\A emprendedora. \A ester";
+    white-space: pre;
+    font-size: 100%;
+
+}
+
+
 .marc {
-    background-image: url('../img/marc.webp');
-    background-color: red;
+    background-image: url('../img/marc.png');
     background-size: cover;
 }
+
+.marc:hover {
+    box-shadow: inset 0 0 0 2px #dc9d16;
+}
+
+
+.marc:hover::after {
+    height: 50px;
+    content: "sistemas de\A gestion empresarial. \A marc";
+    white-space: pre;
+    font-size: 100%;
+}
+
 
 .rober {
     background-size: cover;
-    background-image: url('../img/rober.jpeg');
-    background-color: rgb(74, 74, 166);
+    background-image: url('../img/rober.jpg');
+}
+
+.rober:hover {
+    box-shadow: inset 0 0 0 2px #5918ad;
+}
+
+.rober:hover::after {
+    height: 50px;
+    content: "programacion\A multimedia. \A rober";
+    white-space: pre;
+    font-size: 100%;
+    border: 1px rebeccapurple;
 }
 
 .antonio {
-    background-image: url('../img/antonio.jpeg');
+    background-image: url('../img/antonio.jpg');
     background-size: cover;
-    background-color: yellowgreen;
 }
 
+.antonio:hover {
+    box-shadow: inset 0 0 0 2px #0710b5;
+}
+
+.antonio:hover::after {
+    height: 50px;
+    content: "Acceso\A a datos. \A antonio";
+    white-space: pre;
+    font-size: 100%;
+}
+
+
+
+tr>td>a:link,
+tr>td>a:visited {
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 0.80px black;
+
+}
+
+tr>td>a:hover {
+    color: white;
+    -webkit-text-stroke: 0.5px rgb(244, 106, 106);
+    font-size: 100%;
+}
+
+
+tr:hover td,
+tr:hover span {
+    box-shadow: inset 0 0 0 3px rgb(76, 75, 75);
+}
+
+div {
+    background-color: #c91f6e;
+    height: 100%;
+    line-height: 80px;
+}
+
+div:hover {
+    background-color: #3ec91f;
+    height: 100%;
+    line-height: 80px;
+}
